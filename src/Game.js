@@ -79,6 +79,10 @@ BasicGame.Game.prototype = {
 		
 		// remove buttons
 		this.buttonGroup.callAll("kill");
+		
+		// pick the index and keep rolling
+		this.story.ChooseChoiceIndex(btn.choiceIndex);
+		this.continueStory();
 	}
 
 };
