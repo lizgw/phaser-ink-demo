@@ -1,8 +1,6 @@
+Demo.Preloader = function (game) { };
 
-BasicGame.Preloader = function (game) {
-};
-
-BasicGame.Preloader.prototype = {
+Demo.Preloader.prototype = {
 
 	preload: function () {
 		// load story json
