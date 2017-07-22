@@ -8,22 +8,27 @@
 	<script src="src/Preloader.js"></script>
 	<script src="src/Game.js"></script>
 	<script src="ink/ink.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<div id="gameContainer"></div>
-<script type="text/javascript">
+	<div id="gameContainer"></div>
+	
+	<p class="info">This is a demo that combines <a href="https://github.com/inkle/ink" target="_blank">ink</a> and <a href="http://phaser.io/" target="_blank">phaser</a>. View the source code <a href="https://github.com/lizgw/phaser-ink-demo">here</a>. Refresh the page to restart the demo.</p>
+	
+	<script type="text/javascript">
 
-window.onload = function() {
-	var game = new Phaser.Game(640, 480, Phaser.AUTO, 'gameContainer');
+	window.onload = function() {
+		var game = new Phaser.Game(640, 480, Phaser.AUTO, 'gameContainer');
 
-	game.state.add('Boot', Demo.Boot);
-	game.state.add('Preloader', Demo.Preloader);
-	game.state.add('Game', Demo.Game);
+		game.state.add('Boot', Demo.Boot);
+		game.state.add('Preloader', Demo.Preloader);
+		game.state.add('Game', Demo.Game);
 
-	//	Now start the Boot state.
-	game.state.start('Boot');
-};
+		//	Now start the Boot state.
+		game.state.start('Boot');
+	};
 
-</script>
+	</script>
 </body>
 </html>

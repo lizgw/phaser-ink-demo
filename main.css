@@ -1,0 +1,11 @@
+canvas {
+	margin: 0 auto;
+}
+
+.info {
+	max-width: 500px;
+	font-family: "Arial", "sans-serif";
+	font-size: 1.2rem;
+	margin: 0 auto;
+	margin-top: 20px;
+}
