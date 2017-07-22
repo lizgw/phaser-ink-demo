@@ -65,11 +65,20 @@ BasicGame.Game.prototype = {
 			// create a button for each choice
 			var topMargin = this.mainText.height;
 			var button = this.add.button(10, topMargin + (36 * i), "button", this.choiceClick, this, 1, 0, 0, 0, this.buttonGroup);
+			button.choiceIndex = choice.index;
+			
+			// create a text object for each choice
+			var choiceText = this.add.text(10, 4, choice.text, this.textStyle);
+			button.addChild(choiceText);
 		}
 	},
 	
-	choiceClick: function() {
+	choiceClick: function(btn) {
 		console.log("u clicked it");
+		console.log(btn.choiceIndex);
+		
+		// remove buttons
+		this.buttonGroup.callAll("kill");
 	}
 
 };
