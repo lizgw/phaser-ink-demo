@@ -13,7 +13,7 @@ In order to use an ink story in phaser, you need to do a few things:
 	+ [createChoices()](https://github.com/lizgw/phaser-ink-demo/blob/master/src/Game.js#L59) - Creates a button for each choice.
 	+ [choiceClick()](https://github.com/lizgw/phaser-ink-demo/blob/master/src/Game.js#L77) - Runs when you select a choice & continues the story.
 
-Most of the code in those functions will change depending on how you want to lay out yout game, but the basics are there.
+Most of the code in those functions will change depending on how you want to lay out your game, but the basics are there.
 
 ## Standing on the Shoulders of Giants
 This demo was created with help from a lot of different places, and if you're looking to go farther with his here are some places to look:
